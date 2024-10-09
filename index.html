@@ -3,162 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>arduino</title>
+    <title>Arduino</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
-
-<body> 
-
- 
-     
-<div class="corpo">
-    
-        <h1 style="padding-left: 25%; padding-right: 13%;">Arduino - Conhecendo uma placa Arduino. </h1>
-        
-        <p style="text-align: center;">É preciso ter em mente que o Arduino é uma placa feita para prototipagem, ou seja, para produção de protótipos. O principal componente é o seu microcontrolador (ATMEGA328P), que executa uma função de um microcomputador armazenando e processando o que é mandado para ele. Para se comunicar com a placa se utiliza a linguagem de programação C++ o que possibilita que se escreva comandos para criação de sistemas.  
-    
-    
-    </p>
+<body>
+    <div class="corpo">
+        <h1 style="padding-left: 25%; padding-right: 13%;">Conhecendo o Arduino</h1>
+        <p style="text-align: justify; font-size: 18px; font-family: Arial, sans-serif; color: #000000; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            É preciso ter em mente que o Arduino é uma placa feita para prototipagem, ou seja, para produção de protótipos. O principal componente é o seu microcontrolador (ATMEGA328P), que executa uma função de um microcomputador armazenando e processando o que é mandado para ele. Para se comunicar com a placa se utiliza a linguagem de programação C++ o que possibilita que se escreva comandos para criação de sistemas.
+          </p>
         <div class="container">
-        <div class="content-area">
-    
-            <div class="select-area">
-    
-    
-    
-                <span class="select-item" id="select-item1" style="top:65%; left:65%;">
-                    <a href="#target_1" class="efeito_fade fancybox">1</a>
-                </span>
-                <span class="select-item" id="select-item2" style="top: 5%; left:42%;">
-                    <a href="#target_2" class="efeito_fade fancybox" style="">2</a>
-                </span>
-                <span class="select-item" id="select-item3"   style="top:80%; left:54%;">
-                    <a href="#target_3" class="efeito_fade fancybox">3</a>
-                </span>
-                <span class="select-item" id="select-item4" style="top:80%; left:65%;">
-                    <a href="#target_4" class="efeito_fade fancybox" style="">4</a>
-                </span>
-                <span class="select-item" id="select-item5" style="top:5%; left:65%;">
-                    <a href="#target_5" class="efeito_fade fancybox">5</a>
-                </span>
-                <span class="select-item" id="select-item6" style="top: 30%; left:20%;">
-                    <a href="#target_6" class="efeito_fade fancybox" style="">6</a>
-                </span>
-               
-    
-    
-    
+            <div class="content-area">
+                <div class="select-area">
+                    <button class="select-item circular1" id="select-item1"  style="top:65%; left:65%;">
+                        <a href="#target_1">1</a>
+                    </button>
+                    <button class="select-item" id="select-item2" style="top: 5%; left:42%;">
+                        <a href="#target_2">2</a>
+                    </button>
+                    <button class="select-item" id="select-item3" style="top:80%; left:54%;">
+                        <a href="#target_3">3</a>
+                    </button>
+                    <button class="select-item" id="select-item4" style="top:80%; left:65%;">
+                        <a href="#target_4">4</a>
+                    </button>
+                    <button class="select-item" id="select-item5" style="top:5%; left:65%;">
+                        <a href="#target_5">5</a>
+                    </button>
+                    <button class="select-item" id="select-item6" style="top: 30%; left:20%;">
+                        <a href="#target_6">6</a>
+                    </button>
+                </div>
             </div>
-        </div>
             <!-- MODAL -->
             <div class="modal-area">
-                <div id="target_1" class="popup">
+                <div id="target_1" class="popup" >
                     <div class="popup-content">
-                        <div>
-                            <div class="parent-container"></div>
-                            <p style="margin-left: 6%;  ">
-                                <strong>1 </strong> os terminais terra do Arduino, se localizam dos dois lados da placa e é possível utilizar qualquer uma delas. São utilizadas para alimentar o negativo dos componentes.  
-    
-     
-    
-    
-                            </p>
-                        </div>
+                        <p style="margin-left: 6%;">
+                            <strong> Os terminais terra do Arduino, se localizam dos dois lados da placa e é possível utilizar qualquer uma delas. São utilizadas para alimentar o negativo dos componentes.</strong>
+                        </p>
                     </div>
                 </div>
-    
                 <div id="target_2" class="popup">
                     <div class="popup-content">
-                        <div>
-                            <p style="margin-left: 6%;">
-                                <strong>2 </strong>Antes que você possa começar a mexer é preciso entender como funcionam as portas do Arduino, a maioria de suas entradas. 
-    
-                                Vamos começar pelas portas GND (Ground), os terminais terra do Arduino, se localizam dos dois lados da placa e é possível utilizar qualquer uma delas. São utilizadas para alimentar o negativo dos componentes.  
-    
-    
-     
-     
-                            </p>
-                        </div>
+                        <p style="margin-left: 6%;">
+                            <strong>Antes que você possa começar a mexer é preciso entender como funcionam as portas do Arduino, a maioria de suas entradas. Vamos começar pelas portas GND (Ground), os terminais terra do Arduino, se localizam dos dois lados da placa e é possível utilizar qualquer uma delas. São utilizadas para alimentar o negativo dos componentes.</strong> 
+                        </p>
                     </div>
                 </div>
-                
                 <div id="target_3" class="popup">
                     <div class="popup-content">
-                        <div>
-                            <p style="margin-left: 6%;">
-                                <strong>3 </strong>Assim como ele pode alimentar os equipamentos, ele precisa ser alimentado e possui três entradas para isso, sendo o conector USB do tipo B que serve tanto como alimentação como comunicação serial, um conector jack para ligação DC e sua porta Vin. 
-    
-    
-    
-    
-                            </p>
-                        </div>
+                        <p style="margin-left: 6%;">
+                            <strong>Assim como ele pode alimentar os equipamentos, ele precisa ser alimentado e possui três entradas para isso, sendo o conector USB do tipo B que serve tanto como alimentação como comunicação serial, um conector jack para ligação DC e sua porta Vin.</strong> 
+                        </p>
                     </div>
                 </div>
-                
                 <div id="target_4" class="popup">
                     <div class="popup-content">
-                        <div>
-                            <p style="margin-left: 6%;">
-                                <strong>4 </strong>Antes que você possa começar a mexer é preciso entender como funcionam as portas do Arduino, a maioria de suas entradas. 
-    
-                                Vamos começar pelas portas GND (Ground), os terminais terra do Arduino, se localizam dos dois lados da placa e é possível utilizar qualquer uma delas. São utilizadas para alimentar o negativo dos componentes.  
-    
-     
-                            </p>
-                        </div>
+                        <p style="margin-left: 6%;">
+                            <strong>Agora vamos falar das entradas e saídas digitais e analógicas do Arduino. Começando pelos digitais, são saídas que trabalham com dois níveis de tensão, sendo eles o alto de 5V e o baixo de 0V, também podem ser de 1 e 0 ou ligado e desligado. No Arduino, são as portas de 0 a 13 que recebem a função de terminais digitais, podendo tanto ser de entrada ou saída sendo configurados na programação.</strong> 
+                        </p>
                     </div>
                 </div>
-                  <div id="target_4" class="popup">
+                <div id="target_5" class="popup">
                     <div class="popup-content">
-                        <div>
-                            <p style="margin-left: 6%;">
-                                <strong>4 </strong> Agora vamos falar das entradas e saídas digitais e analógicas do Arduino. Começando pelos digitais, são saídas que trabalham com dois níveis de tensão, sendo eles o alto de 5V e o baixo de 0V, também podem ser de 1 e 0 ou ligado e desligado.   
-    
-                                No Arduino, são as portas de 0 a 13 que recebem a função de terminais digitais, podendo tanto ser de entrada ou saída sendo configurados na programação.    
-    
-     
-                            </p>
-                        </div>
+                        <p style="margin-left: 6%;">
+                            <strong>As portas analógicas são identificadas como A0 a A5, elas podem ser usadas para ler sinais analógicos, como os provenientes de um potenciômetro ou sensor de temperatura. Elas convertem o sinal analógico em digital.</strong> 
+                        </p>
                     </div>
                 </div>
                 <div id="target_6" class="popup">
                     <div class="popup-content">
-                        <div>
-                            <p style="margin-left: 6%;">
-                                <strong>6 </strong> Assim como ele pode alimentar os equipamentos, ele precisa ser alimentado e possui três entradas para isso, sendo o conector USB do tipo B que serve tanto como alimentação como comunicação serial, um conector jack para ligação DC e sua porta Vin.
-    
-     
-                            </p>
-                        </div>
+                        <p style="margin-left: 6%;">
+                            <strong>Assim como ele pode alimentar os equipamentos, ele precisa ser alimentado e possui três entradas para isso, sendo o conector USB do tipo B que serve tanto como alimentação como comunicação serial, um conector jack para ligação DC e sua porta Vin.</strong> 
+                        </p>
                     </div>
                 </div>
-    
-    
-    
-                </div>
-    
-    
-     
-                
             </div>
-            <div style="font-size: smaller;text-align: center;">Placa Arduino
-                </div>
-            <div style="font-size: smaller;text-align: center;">      
-                 </div>
-            <div class="pracegover">#pratodosverem: na imagem, uma placa de Arduino.
-    
-    
-     </div>
-    
+            <div style="font-size: smaller;text-align: center;">Placa Arduino</div>
+            <div style="font-size: smaller;text-align: center;"></div>
+            <div class="pracegover">#pratodosverem: na imagem, uma placa de Arduino.</div>
+        </div>
     </div>
- 
-</div>
-</div> 
 </body>
-</html> 
-
-
 <script src="index.js"></script>
+
+</html>
